@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Parental Consent Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4 mb-4">Parental Consent Form for Tour Program</h1>
+      <form>
+        <div class="form-group">
+          <label for="parentName">Parent's Full Name</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Enter your full name">
+          <small id="parentNameHelp" class="form-text text-muted">As it appears on your legal identification document.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="childName">Child's Full Name</label>
+          <input type="text" class="form-control" id="childName" placeholder="Enter your child's full name">
+          <small id="childNameHelp" class="form-text text-muted">As it appears on their legal identification document.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Contact Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          <small id="phoneHelp" class="form-text text-muted">Please provide a number we can reach you at while your child is on the tour.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="emergencyContact">Emergency Contact Number</label>
+          <input type="tel" class="form-control" id="emergencyContact" placeholder="Enter emergency contact number">
+          <small id="emergencyContactHelp" class="form-text text-muted">In case we can't reach you, please provide an alternate contact.</small>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="consentCheck">
+          <label class="form-check-label" for="consentCheck">
+            I, the undersigned, being the legal guardian of the child named above, hereby give my full consent and approval for my child to participate in the tour program. I understand the nature of the activities my child will be involved in and acknowledge the inherent risks associated with such activities. I agree to hold harmless the organizers of this tour.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
