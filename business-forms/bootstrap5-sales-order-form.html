@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Sales Order Form</title>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4">Sales Order Form</h2>
+    <p class="mb-4">This form is used to record a customer's order for a specific product or service.</p>
+    <form class="mt-4">
+        <div class="mb-3">
+            <label for="customerName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control" id="customerName" required>
+        </div>
+        <div class="mb-3">
+            <label for="customerId" class="form-label">Customer ID</label>
+            <input type="text" class="form-control" id="customerId" required>
+        </div>
+        <div class="mb-3">
+            <label for="orderDate" class="form-label">Order Date</label>
+            <input type="date" class="form-control" id="orderDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="deliveryDate" class="form-label">Delivery Date</label>
+            <input type="date" class="form-control" id="deliveryDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="customerContact" class="form-label">Customer Contact Information</label>
+            <input type="text" class="form-control" id="customerContact" required>
+        </div>
+        <div class="mb-3">
+            <label for="productServiceId" class="form-label">Product/Service ID</label>
+            <input type="text" class="form-control" id="productServiceId" required>
+        </div>
+        <div class="mb-3">
+            <label for="productServiceDescription" class="form-label">Product/Service Description</label>
+            <textarea class="form-control" id="productServiceDescription" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="quantity" required>
+        </div>
+        <div class="mb-3">
+            <label for="unitPrice" class="form-label">Unit Price</label>
+            <input type="number" step="0.01" class="form-control" id="unitPrice" required>
+        </div>
+        <div class="mb-3">
+            <label for="totalPrice" class="form-label">Total Price</label>
+            <input type="number" step="0.01" class="form-control" id="totalPrice" required>
+        </div>
+        <div class="mb-3">
+            <label for="shippingMethod" class="form-label">Shipping Method</label>
+            <select class="form-select" id="shippingMethod" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Standard</option>
+                <option>Express</option>
+                <option>Overnight</option>
+                <!-- add more options as required -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="shippingAddress" class="form-label">Shipping Address</label>
+            <textarea class="form-control" id="shippingAddress" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="paymentMethod" class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Credit Card</option>
+                <option>Check</option>
+                <option>Bank Transfer</option>
+                <!-- add more options as required -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="orderStatus" class="form-label">Order Status</label>
+            <select class="form-select" id="orderStatus" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Pending</option>
+                <option>Processed</option>
+                <option>Shipped</option>
+                <option>Delivered</option>
+                <!-- add more options as required -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="comments" class="form-label">Comments/Additional Instructions</label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="salespersonName" class="form-label">Salesperson Name/ID</label>
+            <input type="text" class="form-control" id="salespersonName">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>

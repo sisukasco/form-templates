@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Feedback Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4">Event Feedback Survey</h1>
+        <form>
+            <!-- Question 1 -->
+            <fieldset class="mb-4">
+                <legend>1. What is your overall satisfaction with the event?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option11">
+                    <label class="form-check-label" for="option11">Very satisfied</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option12">
+                    <label class="form-check-label" for="option12">Satisfied</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option13">
+                    <label class="form-check-label" for="option13">Neither satisfied nor dissatisfied</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option14">
+                    <label class="form-check-label" for="option14">Dissatisfied</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="option15">
+                    <label class="form-check-label" for="option15">Very dissatisfied</label>
+                </div>
+            </fieldset>
+
+<!-- Question 2 -->
+<fieldset class="mb-4">
+    <legend>2. How would you rate the following aspects of the event?</legend>
+    
+    <!-- Location -->
+    <div class="mb-3">
+        <label>Location</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="location" id="location1">
+            <label class="form-check-label" for="location1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="location" id="location2">
+            <label class="form-check-label" for="location2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="location" id="location3">
+            <label class="form-check-label" for="location3">Good</label>
+        </div>
+    </div>
+
+    <!-- Date and Time -->
+    <div class="mb-3">
+        <label>Date and Time</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="dateAndTime" id="dateAndTime1">
+            <label class="form-check-label" for="dateAndTime1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="dateAndTime" id="dateAndTime2">
+            <label class="form-check-label" for="dateAndTime2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="dateAndTime" id="dateAndTime3">
+            <label class="form-check-label" for="dateAndTime3">Good</label>
+        </div>
+    </div>
+    
+    <!-- Event Staff -->
+    <div class="mb-3">
+        <label>Event Staff</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="eventStaff" id="eventStaff1">
+            <label class="form-check-label" for="eventStaff1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="eventStaff" id="eventStaff2">
+            <label class="form-check-label" for="eventStaff2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="eventStaff" id="eventStaff3">
+            <label class="form-check-label" for="eventStaff3">Good</label>
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="mb-3">
+        <label>Content</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="content" id="content1">
+            <label class="form-check-label" for="content1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="content" id="content2">
+            <label class="form-check-label" for="content2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="content" id="content3">
+            <label class="form-check-label" for="content3">Good</label>
+        </div>
+    </div>
+
+    <!-- Audio/Visual Quality -->
+    <div class="mb-3">
+        <label>Audio/Visual Quality</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="audioVisualQuality" id="audioVisualQuality1">
+            <label class="form-check-label" for="audioVisualQuality1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="audioVisualQuality" id="audioVisualQuality2">
+            <label class="form-check-label" for="audioVisualQuality2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="audioVisualQuality" id="audioVisualQuality3">
+            <label class="form-check-label" for="audioVisualQuality3">Good</label>
+        </div>
+    </div>
+
+    <!-- Catering -->
+    <div class="mb-3">
+        <label>Catering</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="catering" id="catering1">
+            <label class="form-check-label" for="catering1">Bad</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="catering" id="catering2">
+            <label class="form-check-label" for="catering2">Average</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="catering" id="catering3">
+            <label class="form-check-label" for="catering3">Good</label>
+        </div>
+    </div>
+
+</fieldset>
+
+
+            <!-- Question 3 -->
+            <fieldset class="mb-4">
+                <legend>3. Was the event length too long, too short, or about right?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="option31">
+                    <label class="form-check-label" for="option31">Too long</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="option32">
+                    <label class="form-check-label" for="option32">Too short</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="option33">
+                    <label class="form-check-label" for="option33">About right</label>
+                </div>
+            </fieldset>
+
+            <!-- Question 4 -->
+            <fieldset class="mb-4">
+                <legend>4. How effective was the communication before the event?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="option41">
+                    <label class="form-check-label" for="option41">Very effective</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="option42">
+                    <label class="form-check-label" for="option42">Somewhat effective</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="option43">
+                    <label class="form-check-label" for="option43">Neither effective nor ineffective</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="option44">
+                    <label class="form-check-label" for="option44">Somewhat ineffective</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="option45">
+                    <label class="form-check-label" for="option45">Very ineffective</label>
+                </div>
+            </fieldset>
+
+            <!-- Question 5 -->
+            <fieldset class="mb-4">
+                <legend>5. Did the event meet your expectations?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="option51">
+                    <label class="form-check-label" for="option51">Far exceeded expectations</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="option52">
+                    <label class="form-check-label" for="option52">Exceeded expectations</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="option53">
+                    <label class="form-check-label" for="option53">Met expectations</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="option54">
+                    <label class="form-check-label" for="option54">Did not meet expectations</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="option55">
+                    <label class="form-check-label" for="option55">Fell far below expectations</label>
+                </div>
+            </fieldset>
+
+            <!-- Question 6 -->
+            <fieldset class="mb-4">
+                <legend>6. Was the information presented at the event clear and easy to understand?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="option61">
+                    <label class="form-check-label" for="option61">Strongly agree</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="option62">
+                    <label class="form-check-label" for="option62">Agree</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="option63">
+                    <label class="form-check-label" for="option63">Neither agree nor disagree</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="option64">
+                    <label class="form-check-label" for="option64">Disagree</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="option65">
+                    <label class="form-check-label" for="option65">Strongly disagree</label>
+                </div>
+            </fieldset>
+
+            <!-- Question 7 -->
+            <fieldset class="mb-4">
+                <legend>7. How likely are you to attend one of our future events?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="option71">
+                    <label class="form-check-label" for="option71">Very likely</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="option72">
+                    <label class="form-check-label" for="option72">Likely</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="option73">
+                    <label class="form-check-label" for="option73">Undecided</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="option74">
+                    <label class="form-check-label" for="option74">Unlikely</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="option75">
+                    <label class="form-check-label" for="option75">Very unlikely</label>
+                </div>
+            </fieldset>
+
+            <!-- Question 8 -->
+            <div class="mb-3">
+                <label for="question8">8. What did you like most about the event?</label>
+                <textarea class="form-control" id="question8" name="question8" rows="3"></textarea>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-3">
+                <label for="question9">9. What improvements would you suggest for future events?</label>
+                <textarea class="form-control" id="question9" name="question9" rows="3"></textarea>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-3">
+                <label for="question10">10. Would you recommend our events to others? Please explain why or why not.</label>
+                <textarea class="form-control" id="question10" name="question10" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Customer Satisfaction Survey</h1>
+
+        <form>
+            <div class="mb-3">
+                <label>On a scale of 1-10, how would you rate your overall satisfaction with our product/service?</label>
+                <!-- Rating Scale 1 - 10 -->
+                <div class="d-flex flex-row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction1" value="1">
+                    <label class="form-check-label" for="satisfaction1">1</label>
+                  </div>
+                  <!-- Repeat this div for values 2-10, changing id and for attributes to match the value -->
+                  <!-- ... -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction10" value="10">
+                    <label class="form-check-label" for="satisfaction10">10</label>
+                  </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>How would you rate the quality of our product/service?</label>
+                <!-- Quality Scale -->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="quality" id="poor" value="Poor">
+                  <label class="form-check-label" for="poor">Poor</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="quality" id="fair" value="Fair">
+                  <label class="form-check-label" for="fair">Fair</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="quality" id="good" value="Good">
+                  <label class="form-check-label" for="good">Good</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="quality" id="veryGood" value="Very Good">
+                  <label class="form-check-label" for="veryGood">Very Good</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="quality" id="excellent" value="Excellent">
+                  <label class="form-check-label" for="excellent">Excellent</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>Do you feel that our product/service provides good value for the money?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="valueForMoney" id="valueYes" value="Yes">
+                  <label class="form-check-label" for="valueYes">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="valueForMoney" id="valueNo" value="No">
+                  <label class="form-check-label" for="valueNo">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="featuresFunctionality" class="form-label">Are there any features or aspects of our product/service that particularly stand out? If so, what are they?</label>
+                <textarea class="form-control" id="featuresFunctionality" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="improvements" class="form-label">What improvements, if any, would you suggest for our product/service?</label>
+                <textarea class="form-control" id="improvements" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label>How would you rate your experience with our customer service team?</label>
+                <!-- Customer Service Scale -->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="customerService" id="servicePoor" value="Poor">
+                  <label class="form-check-label" for="servicePoor">Poor</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="customerService" id="serviceFair" value="Fair">
+                  <label class="form-check-label" for="serviceFair">Fair</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="customerService" id="serviceGood" value="Good">
+                  <label class="form-check-label" for="serviceGood">Good</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="customerService" id="serviceVeryGood" value="Very Good">
+                  <label class="form-check-label" for="serviceVeryGood">Very Good</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="customerService" id="serviceExcellent" value="Excellent">
+                  <label class="form-check-label" for="serviceExcellent">Excellent</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>How satisfied are you with the way we handled any issues you've experienced with our product/service?</label>
+                <!-- Problem Resolution Scale -->
+                <div class="d-flex flex-row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="problemResolution" id="problemResolution1" value="1">
+                    <label class="form-check-label" for="problemResolution1">1</label>
+                  </div>
+                  <!-- Repeat this div for values 2-10, changing id and for attributes to match the value -->
+                  <!-- ... -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="problemResolution" id="problemResolution10" value="10">
+                    <label class="form-check-label" for="problemResolution10">10</label>
+                  </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>If you have the need, how likely are you to purchase our product/service again in the future?</label>
+                <!-- Repurchase and Loyalty Scale -->
+                <div class="d-flex flex-row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="repurchase" id="repurchase1" value="1">
+                    <label class="form-check-label" for="repurchase1">1</label>
+                  </div>
+                  <!-- Repeat this div for values 2-10, changing id and for attributes to match the value -->
+                  <!-- ... -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="repurchase" id="repurchase10" value="10">
+                    <label class="form-check-label" for="repurchase10">10</label>
+                  </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>Would you recommend our product/service to others?</label>
+                <!-- Recommendation Scale -->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="recommendation" id="notAtAllLikely" value="Not at all likely">
+                  <label class="form-check-label" for="notAtAllLikely">Not at all likely</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="recommendation" id="somewhatLikely" value="Somewhat likely">
+                  <label class="form-check-label" for="somewhatLikely">Somewhat likely</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="recommendation" id="veryLikely" value="Very likely">
+                  <label class="form-check-label" for="veryLikely">Very likely</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="additionalFeedback" class="form-label">Do you have any other comments or feedback you would like to share about our product/service?</label>
+                <textarea class="form-control" id="additionalFeedback" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+</body>
+</html>
