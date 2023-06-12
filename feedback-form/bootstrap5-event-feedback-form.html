@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Feedback Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container py-5">
+    <h2>Event Feedback Form</h2>
+    <p class="lead">We value your feedback and use it to improve our events. Please fill out this form to share your experience.</p>
+    <form>
+      <!-- Event Information -->
+      <div class="mb-3">
+        <label for="eventName" class="form-label">Event Name</label>
+        <input type="text" class="form-control" id="eventName" placeholder="Enter event name" required>
+      </div>
+      <div class="mb-3">
+        <label for="eventDate" class="form-label">Event Date</label>
+        <input type="date" class="form-control" id="eventDate" required>
+      </div>
+
+      <!-- Attendee Information -->
+      <div class="mb-3">
+        <label for="attendeeName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="attendeeName" placeholder="Enter your full name" required>
+      </div>
+      <div class="mb-3">
+        <label for="attendeeEmail" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="attendeeEmail" placeholder="Enter your email address">
+        <div class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <!-- Feedback Questions -->
+      <div class="mb-3">
+        <p class="form-label">How would you rate the overall event experience?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="overallExperience" id="overallExperience1" value="1" required>
+          <label class="form-check-label" for="overallExperience1">1</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="overallExperience" id="overallExperience2" value="2">
+          <label class="form-check-label" for="overallExperience2">2</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="overallExperience" id="overallExperience3" value="3">
+          <label class="form-check-label" for="overallExperience3">3</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="overallExperience" id="overallExperience4" value="4">
+          <label class="form-check-label" for="overallExperience4">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="overallExperience" id="overallExperience5" value="5">
+          <label class="form-check-label" for="overallExperience5">5</label>
+        </div>
+      </div>
+
+<!-- Feedback Question 2 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the registration process?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="registrationProcess" id="registrationProcess1" value="1" required>
+    <label class="form-check-label" for="registrationProcess1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="registrationProcess" id="registrationProcess2" value="2">
+    <label class="form-check-label" for="registrationProcess2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="registrationProcess" id="registrationProcess3" value="3">
+    <label class="form-check-label" for="registrationProcess3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="registrationProcess" id="registrationProcess4" value="4">
+    <label class="form-check-label" for="registrationProcess4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="registrationProcess" id="registrationProcess5" value="5">
+    <label class="form-check-label" for="registrationProcess5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 3 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the event location/venue?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventLocation" id="eventLocation1" value="1" required>
+    <label class="form-check-label" for="eventLocation1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventLocation" id="eventLocation2" value="2">
+    <label class="form-check-label" for="eventLocation2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventLocation" id="eventLocation3" value="3">
+    <label class="form-check-label" for="eventLocation3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventLocation" id="eventLocation4" value="4">
+    <label class="form-check-label" for="eventLocation4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventLocation" id="eventLocation5" value="5">
+    <label class="form-check-label" for="eventLocation5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 4 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the event schedule and timing?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventSchedule" id="eventSchedule1" value="1" required>
+    <label class="form-check-label" for="eventSchedule1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventSchedule" id="eventSchedule2" value="2">
+    <label class="form-check-label" for="eventSchedule2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventSchedule" id="eventSchedule3" value="3">
+    <label class="form-check-label" for="eventSchedule3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventSchedule" id="eventSchedule4" value="4">
+    <label class="form-check-label" for="eventSchedule4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="eventSchedule" id="eventSchedule5" value="5">
+    <label class="form-check-label" for="eventSchedule5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 5 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the quality of the presentations/sessions?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="presentationQuality" id="presentationQuality1" value="1" required>
+    <label class="form-check-label" for="presentationQuality1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="presentationQuality" id="presentationQuality2" value="2">
+    <label class="form-check-label" for="presentationQuality2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="presentationQuality" id="presentationQuality3" value="3">
+    <label class="form-check-label" for="presentationQuality3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="presentationQuality" id="presentationQuality4" value="4">
+    <label class="form-check-label" for="presentationQuality4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="presentationQuality" id="presentationQuality5" value="5">
+    <label class="form-check-label" for="presentationQuality5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 6 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the communication before, during, and after the event?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="communicationRating" id="communicationRating1" value="1" required>
+    <label class="form-check-label" for="communicationRating1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="communicationRating" id="communicationRating2" value="2">
+    <label class="form-check-label" for="communicationRating2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="communicationRating" id="communicationRating3" value="3">
+    <label class="form-check-label" for="communicationRating3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="communicationRating" id="communicationRating4" value="4">
+    <label class="form-check-label" for="communicationRating4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="communicationRating" id="communicationRating5" value="5">
+    <label class="form-check-label" for="communicationRating5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 7 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the event's impact on your knowledge/understanding of the topic?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="knowledgeImpact" id="knowledgeImpact1" value="1" required>
+    <label class="form-check-label" for="knowledgeImpact1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="knowledgeImpact" id="knowledgeImpact2" value="2">
+    <label class="form-check-label" for="knowledgeImpact2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="knowledgeImpact" id="knowledgeImpact3" value="3">
+    <label class="form-check-label" for="knowledgeImpact3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="knowledgeImpact" id="knowledgeImpact4" value="4">
+    <label class="form-check-label" for="knowledgeImpact4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="knowledgeImpact" id="knowledgeImpact5" value="5">
+    <label class="form-check-label" for="knowledgeImpact5">5</label>
+  </div>
+</div>
+
+<!-- Feedback Question 8 -->
+<div class="mb-3">
+  <p class="form-label">How would you rate the opportunities for networking at the event?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="networkingOpportunities" id="networkingOpportunities1" value="1" required>
+    <label class="form-check-label" for="networkingOpportunities1">1</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="networkingOpportunities" id="networkingOpportunities2" value="2">
+    <label class="form-check-label" for="networkingOpportunities2">2</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="networkingOpportunities" id="networkingOpportunities3" value="3">
+    <label class="form-check-label" for="networkingOpportunities3">3</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="networkingOpportunities" id="networkingOpportunities4" value="4">
+    <label class="form-check-label" for="networkingOpportunities4">4</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="networkingOpportunities" id="networkingOpportunities5" value="5">
+    <label class="form-check-label" for="networkingOpportunities5">5</label>
+  </div>
+</div>
+
+      <!-- Repeat the structure above for each of the rating questions. -->
+
+      <!-- Open-Ended Questions -->
+      <div class="mb-3">
+        <label for="likeMost" class="form-label">What did you like most about the event?</label>
+        <textarea class="form-control" id="likeMost" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="likeLeast" class="form-label">What did you like least about the event?</label>
+        <textarea class="form-control" id="likeLeast" rows="3"></textarea>
+      </div>
+
+      <!-- Repeat the structure above for each of the open-ended questions. -->
+
+      <!-- Consent for Future Communication -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="futureEvents">
+        <label class="form-check-label" for="futureEvents">Would you like to be notified about future events?</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="contactPermission">
+        <label class="form-check-label" for="contactPermission">Can we contact you regarding your feedback for further clarification or follow-up?</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
